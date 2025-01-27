@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Contenedor de la animación */
+  .animate-marquee {
+    display: flex;
+    gap: 2rem; /* Espaciado entre los logos */
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+  }
+  
+  /* Asegurar que no haya espacios en blanco */
+  .overflow-hidden {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /* Logos deben ser uniformes */
+  .logos img {
+    flex-shrink: 0;
+  }

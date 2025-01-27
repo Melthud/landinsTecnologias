@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecatrónica Automotriz - BQC Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="icon" href="./public/img/BQC LOGO.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Barra superior con texto destacado -->
+  <div class="bg-black text-white py-1">
+    <div class="flex justify-between items-center px-3 flex-wrap">
+      <!-- LOGO -->
+      <div class="font-bold">
+        <a href="#">
+          <img src="./public/img/logobac2d.png" alt="Mi Logo" class="h-6 w-auto">
+        </a>
+      </div>
+      
+      <!-- BOTÓN DE MENÚ PARA MÓVILES -->
+      <button
+        class="text-white md:hidden block focus:outline-none"
+        onclick="toggleMenu()"
+        aria-label="Abrir menú"
+      >
+        <svg
+          id="menu-button"
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+      
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <div
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-4 w-full md:w-auto mt-4 md:mt-0"
+      >
+      <a href="https://maestriasyposgrados.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Maestrías</a>
+      <a href="https://educacionsuperior.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Tecnologías</a>
+      <a href="https://elearning.cjd.edu.ec/" class="hover:underline block py-2 md:py-0 text-xs">Bachillerato</a>
+      <a href="https://capacitacion.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Educación Continua</a>
+      <a href="https://www.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Comercializadora</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-[#fb8500] text-white pt-2 pb-2">
+    <div class="container mx-auto px-4 flex justify-between items-center h-10">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <img src="./public/img/logobac2d.png" alt="Logo" class="h-10 w-14 mr-4">
+            <span class="font-bold text-lg">Educación Superior</span>
+        </div>
+
+        <!-- Otro botón -->
+       
+        <div id="menu" class="hidden bg-gray-700 p-4 rounded mt-2">
+            Contenido del menú
+        </div>
+
+        <!-- Carreras -->
+        <div class="relative">
+            <button id="carreras-button" class="focus:outline-none flex items-center space-x-2">
+                <span>Carreras Tecnico/Tecnologicas</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <!-- Dropdown Menu -->
+            <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-[#fb8500] text-gray-800 rounded shadow-lg">
+                <ul>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./index.html">Enfermería</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./construccion.html">Construcción</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./educacionBasica.html">Educación Básica</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./intercultural.html">Educación Intercultural Bilingüe</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./operacionesRescate.html">Control de Incendios y Operaciones de Rescate</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./contabilidad.html">Contabilidad y Asesoría Tributaria</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./electromecanica.html">Electromecánica</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./automotriz.html">Mecatrónica Automotriz</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./emergenciasMedicas.html">Emergencias Médicas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+  <div class="bg-black text-white font-bold py-2 text-center">
+    <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl px-2">
+      OBTÉN TU TÍTULO DE 3er NIVEL AVALADO POR LA SENESCYT
+    </p>
+  </div>
+  
+
+  <!-- bg-gradient-to-r from-[#efcf6c]  to-[#b6731a] -->
+  <div class="container mx-auto px-4 py-10 text-center">
+    <!-- Título principal -->
+    <p class="text-black text-lg sm:text-xl mb-2 font-semibold">
+      Logra una Titulación Rápida y Reconocida 
+    </p>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-8">
+        Tecnólogo Superior Universitario En Mecatrónica Automotriz
+    </h1>
+  
+    <!-- Imagen con participantes -->
+    <div class="flex justify-center px-4">
+      <img 
+        src="./public/img/mecatronica.jpg" 
+        alt="Graduación" 
+        class="rounded-lg shadow-lg w-full  max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
+    </div>
+  
+    <!-- Texto adicional -->
+    <p class="text-black text-base sm:text-lg md:text-xl font-semibold mt-7">
+      Avanza a tu propio ritmo con apoyo continuo de docentes y asesores
+    </p>
+  
+    <!-- Subtítulo -->
+    <p class="mt-10 text-xl sm:text-2xl font-bold text-gray-800">
+      Conoce más sobre tu tecnología:
+    </p>
+  
+    <!-- Botón -->
+    <div class="mt-6">
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" class="inline-block bg-red-600 text-white font-bold py-3 px-6 sm:px-8 rounded shadow-lg hover:bg-red-700 transition">
+        CONOCER MÁS
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white py-8 overflow-hidden">
+    <div class="text-center mb-8">
+      <h2 class="text-xl sm:text-2xl font-bold text-black">CON EL RESPALDO DE</h2>
+    </div>
+    <div class="relative w-full overflow-hidden">
+      <div class="logos flex items-center gap-8 animate-marquee">
+        <!-- Logos originales -->
+        <img src="./public/img/BQC LOGO.png" alt="Logo 1" class="h-20 sm:h-28">
+        <img src="./public/img/ITSO LOGO.png" alt="Logo 2" class="h-20 sm:h-28">
+        <img src="./public/img/JYS LOGO D.png" alt="Logo 3" class="h-20 sm:h-28">
+        <img src="./public/img/ISTY LOGO.png" alt="Logo 4" class="h-20 sm:h-28">
+        <img src="./public/img/jatun wasi pn.png" alt="Logo 5" class="h-20 sm:h-28">
+        <!-- Duplicados -->
+        <img src="./public/img/BQC LOGO.png" alt="Logo 1" class="h-20 sm:h-28">
+        <img src="./public/img/ITSO LOGO.png" alt="Logo 2" class="h-20 sm:h-28">
+        <img src="./public/img/JYS LOGO D.png" alt="Logo 3" class="h-20 sm:h-28">
+        <img src="./public/img/ISTY LOGO.png" alt="Logo 4" class="h-20 sm:h-28">
+        <img src="./public/img/jatun wasi pn.png" alt="Logo 5" class="h-20 sm:h-28">
+
+        <img src="./public/img/BQC LOGO.png" alt="Logo 1" class="h-20 sm:h-28">
+        <img src="./public/img/ITSO LOGO.png" alt="Logo 2" class="h-20 sm:h-28">
+        <img src="./public/img/JYS LOGO D.png" alt="Logo 3" class="h-20 sm:h-28">
+        <img src="./public/img/ISTY LOGO.png" alt="Logo 4" class="h-20 sm:h-28">
+        <img src="./public/img/jatun wasi pn.png" alt="Logo 5" class="h-20 sm:h-28">
+
+        <img src="./public/img/BQC LOGO.png" alt="Logo 1" class="h-20 sm:h-28">
+        <img src="./public/img/ITSO LOGO.png" alt="Logo 2" class="h-20 sm:h-28">
+        <img src="./public/img/JYS LOGO D.png" alt="Logo 3" class="h-20 sm:h-28">
+        <img src="./public/img/ISTY LOGO.png" alt="Logo 4" class="h-20 sm:h-28">
+        <img src="./public/img/jatun wasi pn.png" alt="Logo 5" class="h-20 sm:h-28">
+
+        <img src="./public/img/BQC LOGO.png" alt="Logo 1" class="h-20 sm:h-28">
+        <img src="./public/img/ITSO LOGO.png" alt="Logo 2" class="h-20 sm:h-28">
+        <img src="./public/img/JYS LOGO D.png" alt="Logo 3" class="h-20 sm:h-28">
+        <img src="./public/img/ISTY LOGO.png" alt="Logo 4" class="h-20 sm:h-28">
+        <img src="./public/img/jatun wasi pn.png" alt="Logo 5" class="h-20 sm:h-28">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="text-gray-600 py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-black mb-6">
+        ¿QUÉ PUEDES LOGRAR CON ESTA CARRERA?
+      </h2>
+      <ul class="text-gray-700 space-y-4">
+        <li class="flex items-start justify-center">
+          <span class="text-red-500 mr-2">✔</span>
+          <p class="text-base sm:text-lg">
+            Diagnosticar y reparar sistemas avanzados en autos modernos.
+          </p>
+        </li>
+        <li class="flex items-start justify-center">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <p class="text-base sm:text-lg">
+            Diseñar e implementar tecnologías innovadoras para mejorar la eficiencia de los vehículos.
+          </p>
+        </li>
+        <li class="flex items-start justify-center">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <p class="text-base sm:text-lg">
+            Trabajar con autos eléctricos, híbridos y tradicionales.
+          </p>
+        </li>
+        <li class="flex items-start justify-center">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <p class="text-base sm:text-lg">
+            Optimizar el rendimiento de los motores y otros sistemas automotrices.
+          </p>
+        </li>
+        <li class="flex items-start justify-center">
+            <span class="text-[#fb8500] mr-2">✔</span>
+            <p class="text-base sm:text-lg">
+                Participar en proyectos de innovación en el sector automotriz, desde diseño hasta mantenimiento.
+            </p>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="flex items-center justify-center bg-gray-100 py-6 px-4">
+    <div class="bg-black text-white text-center py-6 px-6 sm:px-8 md:px-12 lg:px-16 shadow-lg rounded-lg w-full max-w-3xl">
+      <p class="text-base sm:text-lg md:text-xl font-semibold">
+        <strong>¡Lleva tu pasión por los autos al siguiente nivel!  </strong>
+      </p>
+      <p>Con esta carrera, no solo estarás preparado para el presente de la industria automotriz, sino también para su futuro. Si te gustan los autos y la tecnología, esta es la oportunidad que estabas esperando.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-10 text-center">
+    <!-- Imagen con participantes -->
+    <div class="flex justify-center">
+      <img 
+        src="./public/img/mecatronicaP.jpg" 
+        alt="Graduación" 
+        class="w-full sm:w-3/4 md:w-2/5 lg:w-2/5 rounded-lg shadow-lg object-cover"
+      >
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center bg-gray-100 pb-12 px-4">
+    <div 
+      class="bg-[#fb8500] text-white text-center py-8 px-8 sm:px-12 md:px-16 shadow-lg rounded-lg w-full sm:w-3/4 md:w-2/3 lg:w-1/2 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+    >
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas">
+        <p class="text-xl sm:text-2xl md:text-3xl font-bold">
+          SEPARA TU CUPO CON TAN SOLO $50
+        </p>
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white pb-8 px-4">
+    <!-- Título -->
+    <div class="text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 pt-8 pb-8">MALLA CURRICULAR</h2>
+    </div>
+  
+    <!-- Imagen -->
+    <div class="flex justify-center">
+      <img 
+        src="./public/img/mallaMecatronica.png" 
+        alt="Graduación" 
+        class="w-full sm:w-3/4 md:w-1/2 rounded-lg shadow-2xl object-cover"
+      >
+    </div>
+  
+    <!-- Texto motivacional -->
+    <div class="text-center">
+      <h2 class="text-lg sm:text-xl md:text-2xl font-bold italic text-gray-800 pt-10">
+        Ser mejor depende de ti, haz clic en el botón y transforma tu futuro hoy
+      </h2>
+    </div>
+  
+    <!-- Botón -->
+    <div class="flex items-center justify-center pt-3">
+      <a 
+        href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" 
+        class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg hover:bg-red-700 transition"
+      >
+        CONOCER MÁS
+      </a>
+    </div>
+  </div>
+
+  <div class="text-gray-600 py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Título -->
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-6">
+        ¿DÓNDE PODRÁS TRABAJAR?
+      </h2>
+  
+      <!-- Lista de lugares -->
+      <ul class="text-center text-gray-700 space-y-4">
+        <li class="text-sm sm:text-base md:text-lg">
+          <span class="text-red-500 mr-2">✔</span>
+          <strong>Talleres especializados: </strong> Diagnostica y repara autos de alta tecnología en talleres reconocidos.
+        </li>
+        <li class="text-sm sm:text-base md:text-lg">
+          <span class="mr-2" style="color: #fb8500;">✔</span>
+          <strong>Concesionarios automotrices: </strong>Trabaja en marcas como Chevrolet, Toyota o Kia, ofreciendo mantenimiento avanzado y soporte técnico.
+        </li>
+        <li class="text-sm sm:text-base md:text-lg">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <strong>Fabricantes de vehículos: </strong>Colabora con empresas automotrices en el diseño y la producción de vehículos.
+        </li>
+        <li class="text-sm sm:text-base md:text-lg">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <strong>Empresas de transporte: </strong>Asegura que las flotas de camiones y buses estén en óptimas condiciones.
+        </li>
+        <li class="text-sm sm:text-base md:text-lg">
+          <span class="text-[#fb8500] mr-2">✔</span>
+          <strong>Proyectos de innovación: </strong>Participa en el desarrollo de autos eléctricos o sistemas de conducción autónoma.
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="bg-white text-center pt-4">
+    <!-- Título -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black pt-8 pb-8">
+      REQUISITOS DE MATRÍCULA
+    </h2>
+  
+    <!-- Contenedor principal -->
+    <div class="flex items-center justify-center w-full px-4 sm:px-8 md:px-16">
+      <div class="flex flex-col items-center justify-center pb-8">
+        <!-- Contenedor de los cuadros -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-9">
+          <!-- Cuadro 1 -->
+          <div class="bg-[#ff9822] p-4 text-center rounded-lg shadow-lg">
+            <img src="./public/img/certificate.png" alt="Icono 1" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
+            <p class="font-bold text-sm sm:text-base">Copia del título de bachiller o su equivalente</p>
+          </div>
+  
+          <!-- Cuadro 2 -->
+          <div class="bg-[#ff9822] p-6 text-center rounded-lg shadow-lg">
+            <img src="./public/img/gallery.png" alt="Icono 2" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
+            <p class="font-bold text-sm sm:text-base">4 Fotos tamaño carné</p>
+          </div>
+  
+          <!-- Cuadro 3 -->
+          <div class="bg-[#ff9822] p-6 text-center rounded-lg shadow-lg">
+            <img src="./public/img/exam.png" alt="Icono 3" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
+            <p class="font-bold text-sm sm:text-base">Formulario de inscripción y matrícula</p>
+          </div>
+  
+          <!-- Cuadro 4 -->
+          <div class="bg-[#ff9822] p-6 text-center rounded-lg shadow-lg">
+            <img src="./public/img/cheque.png" alt="Icono 4" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
+            <p class="font-bold text-sm sm:text-base">Certificado del pago de aranceles</p>
+          </div>
+        </div>
+  
+        <!-- Cuadro 5 (Centrado en una nueva fila) -->
+        <div class="mt-6 bg-[#ff9822] p-6 text-center rounded-lg shadow-lg w-[83%] sm:w-2/3 md:w-1/4">
+            <img src="./public/img/diploma.png" alt="Icono 5" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
+            <p class="font-bold text-sm sm:text-base">
+              Certicados afines (Opcional)
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="text-gray-600 py-8 px-4">
+    <!-- Título principal -->
+    <div class="text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 pt-8 pb-8">
+        ¿POR QUÉ ES IMPORTANTE TU CARRERA?
+      </h2>
+    </div>
+  
+    <!-- Imagen centrada -->
+    <div class="flex justify-center">
+      <img src="./public/img/mecatronicaS.jpg" alt="Graduación" class="w-full sm:w-[75%] md:w-[50%] rounded-lg shadow-2xl object-cover">
+    </div>
+  
+    <!-- Contenido principal -->
+    <div class="max-w-4xl mx-auto text-center pb-6">
+      <p class="pt-10 text-base sm:text-lg md:text-2xl pb-10">
+        La mecatrónica automotriz no solo trata de reparar autos; se trata de innovar y crear tecnologías que hagan los vehículos más seguros, eficientes y sostenibles. Con el auge de los autos eléctricos y la necesidad de reducir el impacto ambiental, los profesionales de esta área son indispensables para construir un futuro más tecnológico y responsable.
+      </p>
+  
+      <!-- Subtítulo -->
+      <h2 class="text-xl sm:text-2xl md:text-2xl font-bold text-black mb-6">
+        ¿POR QUÉ ELEGIR ESTA CARRERA?
+      </h2>
+  
+      <!-- Lista de beneficios -->
+      <ul class="text-center text-black space-y-4">
+        <p class="italic text-lg"><strong>¿Te apasionan los autos y la tecnología?</strong></p>
+        <p>
+            Estudiar Mecatrónica Automotriz te prepara para trabajar con vehículos modernos que integran sistemas mecánicos, eléctricos y electrónicos. Esta carrera combina lo mejor de la mecánica tradicional con lo último en tecnología, dándote las herramientas para innovar en la industria automotriz.
+        </p>
+        <p>En Ecuador, donde los vehículos son esenciales para la vida diaria y el transporte comercial, esta carrera tiene una gran demanda. Además, con el avance de los autos eléctricos y los sistemas inteligentes, los profesionales en mecatrónica automotriz son cada vez más necesarios.</p>
+      </ul>
+    </div>
+  
+    <!-- Botón de llamada a la acción -->
+    <div class="flex items-center justify-center pt-3">
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg hover:bg-red-700 transition">
+        INSCRÍBETE Y MEJORA TU FUTURO
+      </a>
+    </div>
+  </div>
+ 
+
+  <div class="bg-white text-center pt-4">
+    <!-- Título -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black pt-4 pb-8 px-4 sm:px-8 md:px-16">
+        AL ESTUDIAR CON NOSOTROS, ACCEDES A GRANDES BENEFICIOS QUE <a class="text-[#fb8500]"><strong>IMPULSAN TU FUTURO</strong></a>
+    </h2>
+    <div class="flex justify-center pb-12 px-[5%] sm:px-[5%] md:px-[5%]">
+        <img src="./public/img/beneficios.png" alt="Graduación" class="w-full sm:w-[75%] md:w-[35%] lg:w-[30%] xl:w-[35%] rounded-lg shadow-2xl object-cover">
+    </div>
+</div>
+
+
+
+  <div class="bg-[#fb8500] pt-8 overflow-hidden">
+    <div class="text-center mb-8 px-4">
+      <!-- Título principal -->
+      <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
+        +10 AÑOS DE EXPERIENCIA
+      </h2>
+      <!-- Subtítulo -->
+      <h2 class="text-base sm:text-xl md:text-2xl font-bold text-black mt-4 leading-snug">
+        EN EL ÁREA DE LA EDUCACIÓN DE CALIDAD
+      </h2>
+    </div>
+  </div>
+
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4">
+      <!-- Contenedor general con flex-wrap -->
+      <div class="flex flex-wrap justify-center lg:justify-between items-start text-center space-y-8 lg:space-y-0">
+        <!-- Columna 1 -->
+        <div class="w-full lg:w-1/4 px-4">
+          <img src="./public/img/BQC LOGO.png" alt="BQC Logo" class="mx-auto mb-4 h-16">
+          <p class="text-sm leading-6">
+            Corporación Educativa BQC, Riobamba – Ecuador, Eduardo Kingman y Teófilo Sáenz
+          </p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="w-full lg:w-1/4 px-4">
+          <h3 class="font-bold uppercase mb-4">Maestrías</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://maestriasyposgrados.bqc.com.ec/maestrias/tecnologicas.html">MAESTRÍA TECNOLÓGICA EN HERRAMIENTAS DIGITALES PARA LA DOCENCIA</a></li>
+            <li><a href="https://maestriasyposgrados.bqc.com.ec/maestrias/automatizacion.html">MAESTRÍA TECNOLÓGICA EN HERRAMIENTAS DE AUTOMATIZACIÓN Y CONTROL</a></li>
+            <li><a href="https://maestriasyposgrados.bqc.com.ec/maestrias/industrial.html">MAESTRÍA TECNOLÓGICA EN HERRAMIENTAS DE SEGURIDAD INDUSTRIAL Y SALUD EN EL TRABAJO</a></li>
+          </ul>
+        </div>
+        <!-- Columna 3 -->
+        <div class="w-full lg:w-1/4 px-4">
+          <h3 class="font-bold uppercase mb-4">Nuestros Servicios</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://educacionsuperior.bqc.com.ec/" target="_blank">SERVICIO DE TECNOLOGÍAS</a></li>
+            <li><a href="https://pceijohndewey.bqc.com.ec/" target="_blank">SERVICIO DE COLEGIO DE BACHILLERATO</a></li>
+            <li><a href="https://capacitadora.bqc.com.ec/" target="_blank">SERVICIO DE EDUCACIÓN CONTINUA</a></li>
+          </ul>
+        </div>
+        <!-- Columna 4 -->
+        <div class="w-full lg:w-1/4 px-4">
+          <h3 class="font-bold uppercase mb-4">Nuestras Redes Sociales</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.youtube.com/@CORPORACIONEDUCATIVABQC" target="_blank">YOUTUBE</a></li>
+            <li><a href="https://www.instagram.com/corporacioneducativabqc.mv?igsh=eHo0eG0yOTh3ZGx5" target="_blank">INSTAGRAM</a></li>
+            <li><a href="https://www.facebook.com/corporacion.educativa.bqc.matriz" target="_blank">FACEBOOK</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=593962929143&text=&type=phone_number&app_absent=0" target="_blank">WHATSAPP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+            // Función para el botón "Carreras"
+            const carrerasButton = document.getElementById('carreras-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+
+            carrerasButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Evita que el evento se propague
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            // Ocultar el menú desplegable al hacer clic fuera de él
+            document.addEventListener('click', () => {
+                dropdownMenu.classList.add('hidden');
+            });
+
+            // Función para otro botón
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Evita conflictos con otros clics
+                menu.classList.toggle('hidden');
+            });
+        });
+            
+      </script>
+</body>
+</html>
