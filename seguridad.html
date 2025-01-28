@@ -3,30 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enfermería - BQC Corp</title>
+  <title>Seguridad y Salud Ocupacional - BQC Corp</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./src/styles.css">
   <link rel="icon" href="./public/img/BQC LOGO.ico" type="image/x-icon">
 </head>
 <body class="bg-gray-100">
 
-  <!-- Overlay -->
-  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <!-- Popup Content -->
-    <div class="relative bg-white rounded-2xl shadow-lg p-6 w-11/12 max-w-md text-center">
-      <!-- Close Button -->
-      <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      <img src="./public/img/beneficios.png" alt="Ad Image" class="rounded-xl mb-4 mx-auto">
-      <h2 class="pb-3 font-bold">
-        NO SOLO TE ACOMPAÑAREMOS EN CADA PASO DE TU PROCESO EDUCATIVO, SINO QUE TAMBIÉN TE PROPORCIONAREMOS LAS<a class="text-[#fb8500]"><strong> HERRAMIENTAS TECNOLÓGICAS NECESARIAS PARA TU ÉXITO</strong></a>
-      </h2>
-      <a href="https://example.com" target="_blank" class="bg-[#fb8500] text-white font-medium py-2 px-4 rounded-xl hover:bg-[#bf7d31] transition">Inscríbete</a>
-    </div>
-  </div>
+    <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <!-- Popup Content -->
+        <div class="relative bg-white rounded-2xl shadow-lg p-6 w-11/12 max-w-md text-center">
+          <!-- Close Button -->
+          <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img src="./public/img/beneficios.png" alt="Ad Image" class="rounded-xl mb-4 mx-auto">
+          <h2 class="pb-3 font-bold">
+            NO SOLO TE ACOMPAÑAREMOS EN CADA PASO DE TU PROCESO EDUCATIVO, SINO QUE TAMBIÉN TE PROPORCIONAREMOS LAS<a class="text-[#fb8500]"><strong> HERRAMIENTAS TECNOLÓGICAS NECESARIAS PARA TU ÉXITO</strong></a>
+          </h2>
+          <a href="https://example.com" target="_blank" class="bg-[#fb8500] text-white font-medium py-2 px-4 rounded-xl hover:bg-[#bf7d31] transition">Inscríbete</a>
+        </div>
+      </div>
 
 
   <!-- Barra superior con texto destacado -->
@@ -67,11 +66,11 @@
         id="menu"
         class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-4 w-full md:w-auto mt-4 md:mt-0"
       >
-        <a href="https://maestriasyposgrados.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Maestrías</a>
-        <a href="https://educacionsuperior.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Tecnologías</a>
-        <a href="https://elearning.cjd.edu.ec/" class="hover:underline block py-2 md:py-0 text-xs">Bachillerato</a>
-        <a href="https://capacitacion.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Educación Continua</a>
-        <a href="https://www.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Comercializadora</a>
+      <a href="https://maestriasyposgrados.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Maestrías</a>
+      <a href="https://educacionsuperior.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Tecnologías</a>
+      <a href="https://elearning.cjd.edu.ec/" class="hover:underline block py-2 md:py-0 text-xs">Bachillerato</a>
+      <a href="https://capacitacion.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Educación Continua</a>
+      <a href="https://www.bqc.com.ec/" class="hover:underline block py-2 md:py-0 text-xs">Comercializadora</a>
       </div>
     </div>
   </div>
@@ -93,7 +92,7 @@
         <!-- Carreras -->
         <div class="relative">
             <button id="carreras-button" class="focus:outline-none flex items-center space-x-2">
-                <span>Carreras</span>
+                <span>Carreras Tecnico/Tecnologicas</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
@@ -101,16 +100,16 @@
             <!-- Dropdown Menu -->
             <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-[#fb8500] text-gray-800 rounded shadow-lg">
                 <ul>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./index.html">Enfermería</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./construccion.html">Construcción</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./educacionBasica.html">Educación Básica</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./intercultural.html">Educación Intercultural Bilingüe</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./operacionesRescate.html">Control de Incendios y Operaciones de Rescate</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./contabilidad.html">Contabilidad y Asesoría Tributaria</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./electromecanica.html">Electromecánica</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./automotriz.html">Mecatrónica Automotriz</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./emergenciasMedicas.html">Emergencias Médicas</a></li>
-                  <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./seguridad.html">Seguridad y Salud Ocupacional</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./index.html">Enfermería</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./construccion.html">Construcción</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./educacionBasica.html">Educación Básica</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./intercultural.html">Educación Intercultural Bilingüe</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./operacionesRescate.html">Control de Incendios y Operaciones de Rescate</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./contabilidad.html">Contabilidad y Asesoría Tributaria</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./electromecanica.html">Electromecánica</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./automotriz.html">Mecatrónica Automotriz</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./emergenciasMedicas.html">Emergencias Médicas</a></li>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./seguridad.html">Seguridad y Salud Ocupacional</a></li>
                 </ul>
             </div>
         </div>
@@ -132,15 +131,15 @@
       Logra una Titulación Rápida y Reconocida 
     </p>
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-8">
-      Técnico Superior en Enfermería
+        Tecnólogo Superior Universitario en Seguridad y Salud Ocupacional
     </h1>
   
     <!-- Imagen con participantes -->
     <div class="flex justify-center px-4">
       <img 
-        src="./public/img/DSC_1970.png" 
+        src="./public/img/seguridadSalud1.jpg" 
         alt="Graduación" 
-        class="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
+        class="rounded-lg shadow-lg w-full  max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
     </div>
   
     <!-- Texto adicional -->
@@ -155,7 +154,7 @@
   
     <!-- Botón -->
     <div class="mt-6">
-      <a href="https://calendly.com/corporacioneducativabqc-mv/bqc_corp" class="inline-block bg-red-600 text-white font-bold py-3 px-6 sm:px-8 rounded shadow-lg hover:bg-red-700 transition">
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" class="inline-block bg-red-600 text-white font-bold py-3 px-6 sm:px-8 rounded shadow-lg hover:bg-red-700 transition">
         CONOCER MÁS
       </a>
     </div>
@@ -213,39 +212,33 @@
         <li class="flex items-start justify-center">
           <span class="text-red-500 mr-2">✔</span>
           <p class="text-base sm:text-lg">
-            Participar en concursos de mérito y oposición.
-          </p>
-        </li>
-        <li class="flex items-start justify-center">
-          <span class="mr-2" style="color: #fb8500;">✔</span>
-          <p class="text-base sm:text-lg">
-            Trabajar en centros médicos, públicos y privados.
+            <strong>Prevenir accidentes: </strong>Identificarás posibles peligros y tomarás medidas para evitarlos.
           </p>
         </li>
         <li class="flex items-start justify-center">
           <span class="text-[#fb8500] mr-2">✔</span>
           <p class="text-base sm:text-lg">
-            Brindar atención directa en hospitales, clínicas o incluso en sus propios hogares.
+            <strong>Proteger la salud de los trabajadores: </strong>Ayudarás a reducir enfermedades relacionadas con el trabajo.
           </p>
         </li>
         <li class="flex items-start justify-center">
           <span class="text-[#fb8500] mr-2">✔</span>
           <p class="text-base sm:text-lg">
-            Ayudar a prevenir enfermedades y promover hábitos saludables en las comunidades.
+            <strong>Diseñar planes de emergencia: </strong>Serás clave en la creación de estrategias para actuar en caso de incendios, terremotos u otros riesgos.
           </p>
         </li>
         <li class="flex items-start justify-center">
           <span class="text-[#fb8500] mr-2">✔</span>
           <p class="text-base sm:text-lg">
-            Trabajar junto a médicos y otros profesionales de la salud durante procedimientos médicos.
+            <strong>Cumplir con normativas: </strong>Asegurarás que las empresas sigan las reglas nacionales e internacionales sobre seguridad.
           </p>
         </li>
         <li class="flex items-start justify-center">
-          <span class="text-[#fb8500] mr-2">✔</span>
-          <p class="text-base sm:text-lg">
-            Contribuir al bienestar de comunidades rurales y urbanas, especialmente en áreas más vulnerables.
-          </p>
-        </li>
+            <span class="text-[#fb8500] mr-2">✔</span>
+            <p class="text-base sm:text-lg">
+                <strong>Mejorar el ambiente laboral: </strong>Fomentarás una cultura donde la seguridad sea prioridad, aumentando la productividad y reduciendo costos por accidentes.
+            </p>
+          </li>
       </ul>
     </div>
   </div>
@@ -254,8 +247,9 @@
   <div class="flex items-center justify-center bg-gray-100 py-6 px-4">
     <div class="bg-black text-white text-center py-6 px-6 sm:px-8 md:px-12 lg:px-16 shadow-lg rounded-lg w-full max-w-3xl">
       <p class="text-base sm:text-lg md:text-xl font-semibold">
-        Aprenderás a dar apoyo físico, emocional, administrar medicamentos, a monitorear el estado de salud y a cuidar de mejor manera a tus pacientes a través de talleres y charlas.
+        <strong>¡Sé la diferencia en el lugar de trabajo!  </strong>
       </p>
+      <p>Esta carrera no solo te abre puertas laborales, sino que también te da la oportunidad de cuidar a las personas y contribuir al crecimiento responsable de las empresas en Ecuador.</p>
     </div>
   </div>
 
@@ -263,7 +257,7 @@
     <!-- Imagen con participantes -->
     <div class="flex justify-center">
       <img 
-        src="./public/img/WhatsApp Image 2024-06-28 at 2.56.22 PM.jpeg" 
+        src="./public/img/seguridad ocupacional_Mesa de trabajo 1.png" 
         alt="Graduación" 
         class="w-full sm:w-3/4 md:w-2/5 lg:w-2/5 rounded-lg shadow-lg object-cover"
       >
@@ -274,7 +268,7 @@
     <div 
       class="bg-[#fb8500] text-white text-center py-8 px-8 sm:px-12 md:px-16 shadow-lg rounded-lg w-full sm:w-3/4 md:w-2/3 lg:w-1/2 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
     >
-      <a href="https://calendly.com/corporacioneducativabqc-mv/bqc_corp">
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas">
         <p class="text-xl sm:text-2xl md:text-3xl font-bold">
           SEPARA TU CUPO CON TAN SOLO $50
         </p>
@@ -291,7 +285,7 @@
     <!-- Imagen -->
     <div class="flex justify-center">
       <img 
-        src="./public/img/mallaenfermeria.png" 
+        src="./public/img/mallaSaludOc.png" 
         alt="Graduación" 
         class="w-full sm:w-3/4 md:w-1/2 rounded-lg shadow-2xl object-cover"
       >
@@ -307,7 +301,7 @@
     <!-- Botón -->
     <div class="flex items-center justify-center pt-3">
       <a 
-        href="https://calendly.com/corporacioneducativabqc-mv/bqc_corp" 
+        href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" 
         class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg hover:bg-red-700 transition"
       >
         CONOCER MÁS
@@ -326,44 +320,51 @@
       <ul class="text-center text-gray-700 space-y-4">
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-red-500 mr-2">✔</span>
-          Podrás trabajar en cualquier centro de salud
+          Empresas de Construcción
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="mr-2" style="color: #fb8500;">✔</span>
-          Hospitales públicos y privados
+          Supervisor de seguridad en obras, evaluadores de riesgos
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Bomberos
+          Industrias Manufactureras
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Hospitales Geriátricos
+          Fábricas y plantas
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Trabajar junto a médicos y otros profesionales de la salud durante procedimientos médicos.
+          Empresas de Energía
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Empresas en el área de salud (salud prepago)
+          Plantas eléctricas
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Dispensarios médicos particulares
+          Petroquímicas o de energía renovable
         </li>
         <li class="text-sm sm:text-base md:text-lg">
           <span class="text-[#fb8500] mr-2">✔</span>
-          Clínicas de alta complejidad
+          Coordinadores de seguridad en hospitales
         </li>
         <li class="text-sm sm:text-base md:text-lg">
-          <span class="text-[#fb8500] mr-2">✔</span>
-          Centros comunitarios
-        </li>
+            <span class="text-[#fb8500] mr-2">✔</span>
+            Asesores en seguridad e higiene en empresas de producción y procesamiento de alimentos
+          </li>
+          <li class="text-sm sm:text-base md:text-lg">
+            <span class="text-[#fb8500] mr-2">✔</span>
+            Empresas que ofrecen servicios de asesoría en seguridad y salud ocupacional
+          </li>
+          <li class="text-sm sm:text-base md:text-lg">
+            <span class="text-[#fb8500] mr-2">✔</span>
+            Coordinadores de seguridad en hoteles
+          </li>
       </ul>
     </div>
   </div>
-
   <div class="bg-white text-center pt-4">
     <!-- Título -->
     <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black pt-8 pb-8">
@@ -401,12 +402,7 @@
         </div>
   
         <!-- Cuadro 5 (Centrado en una nueva fila) -->
-        <div class="mt-6 bg-[#ff9822] p-6 text-center rounded-lg shadow-lg w-[83%] sm:w-2/3 md:w-1/4">
-          <img src="./public/img/diploma.png" alt="Icono 5" class="mx-auto mb-4 h-[100px] sm:h-[120px] md:h-[150px]">
-          <p class="font-bold text-sm sm:text-base">
-            Si eres Auxiliar de Enfermería el certificado de Auxiliar
-          </p>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -416,70 +412,57 @@
     <!-- Título principal -->
     <div class="text-center">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 pt-8 pb-8">
-        ¿POR QUÉ ES IMPORTANTE TU ROL?
+        ¿POR QUÉ ES IMPORTANTE TU CARRERA?
       </h2>
     </div>
   
     <!-- Imagen centrada -->
     <div class="flex justify-center">
-      <img src="./public/img/enfermeros.jpg" alt="Graduación" class="w-full sm:w-[75%] md:w-[50%] rounded-lg shadow-2xl object-cover">
+      <img src="./public/img/seguridadOc.jpg" alt="Graduación" class="w-full sm:w-[75%] md:w-[50%] rounded-lg shadow-2xl object-cover">
     </div>
   
     <!-- Contenido principal -->
     <div class="max-w-4xl mx-auto text-center pb-6">
       <p class="pt-10 text-base sm:text-lg md:text-2xl pb-10">
-        Serás una pieza clave para mejorar la salud de muchas personas. En comunidades donde el acceso a médicos es
-        limitado, tu ayuda será invaluable, llevando esperanza y
-        cuidado a quienes más lo necesitan.
+        Estudiar esta carrera no solo se trata de cumplir con reglas, sino de cuidar vidas. Los accidentes laborales no solo afectan a los trabajadores, sino también a las empresas y sus comunidades. Como tecnólogo, estarás salvando vidas, mejorando condiciones laborales y ayudando a que las empresas sean más responsables.
       </p>
   
       <!-- Subtítulo -->
       <h2 class="text-xl sm:text-2xl md:text-2xl font-bold text-black mb-6">
-        ¿POR QUÉ ESTUDIAR CON NOSOTROS?
+        ¿POR QUÉ ELEGIR ESTA CARRERA?
       </h2>
   
       <!-- Lista de beneficios -->
-      <ul class="text-center text-gray-700 space-y-4">
-        <li>
-          <span class="text-red-500 mr-2">✔</span>
-          Nosotros te preparamos para ser parte del área de salud.
-        </li>
-        <li>
-          <span class="mr-2" style="color: #fb8500;">✔</span>
-          Estudiar esta carrera te convierte en alguien clave en el cuidado de pacientes, la promoción de la salud y la prevención de enfermedades.
-        </li>
-        <li>
-          <span class="text-[#fb8500] mr-2">✔</span>
-          Este rol es esencial, especialmente en zonas rurales donde el acceso a medicina es limitado.
-        </li>
-        <li>
-          <span class="text-[#fb8500] mr-2">✔</span>
-          Nosotros te preparamos para ayudar a pacientes
-          durante emergencias, cuidar al adulto mayor y
-          apoyar a quienes enfrentan enfermedades crónicas.
-        </li>
+      <ul class="text-center text-black space-y-4">
+        <p class="italic text-lg"><strong>¿Te imaginas ser la persona que ayuda a evitar accidentes en el trabajo y a garantizar que todos los trabajadores estén seguros? </strong></p>
+        <p>
+            Estudiar Seguridad y Salud Ocupacional te prepara para diseñar y aplicar estrategias que cuiden a las personas mientras hacen su trabajo, asegurando ambientes más seguros y saludables.
+        </p>
+        <p>En Ecuador, esta carrera es muy importante porque muchas industrias están creciendo y necesitan cumplir con reglas para proteger a sus empleados. Como tecnólogo en este campo, serás parte del cambio hacia empresas más responsables y sostenibles.</p>
       </ul>
     </div>
   
     <!-- Botón de llamada a la acción -->
     <div class="flex items-center justify-center pt-3">
-      <a href="https://calendly.com/corporacioneducativabqc-mv/bqc_corp" class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg hover:bg-red-700 transition">
+      <a href="https://calendly.com/d/cnrg-x42-7p9/jys-citas" class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg hover:bg-red-700 transition">
         INSCRÍBETE Y MEJORA TU FUTURO
       </a>
     </div>
   </div>
+ 
 
-  
   <div class="bg-white text-center pt-4">
     <!-- Título -->
     <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black pt-4 pb-8 px-4 sm:px-8 md:px-16">
-      NO SOLO TE ACOMPAÑAREMOS EN CADA PASO DE TU PROCESO EDUCATIVO, SINO QUE TAMBIÉN TE PROPORCIONAREMOS LAS<a class="text-[#fb8500]"><strong> HERRAMIENTAS TECNOLÓGICAS NECESARIAS PARA TU ÉXITO</strong></a>
+        AL ESTUDIAR CON NOSOTROS, ACCEDES A GRANDES BENEFICIOS QUE <a class="text-[#fb8500]"><strong>IMPULSAN TU FUTURO</strong></a>
     </h2>
     <div class="flex justify-center pb-12 px-[5%] sm:px-[5%] md:px-[5%]">
         <img src="./public/img/beneficios.png" alt="Graduación" class="w-full sm:w-[75%] md:w-[35%] lg:w-[30%] xl:w-[35%] rounded-lg shadow-2xl object-cover">
     </div>
 </div>
- 
+
+
+
   <div class="bg-[#fb8500] pt-8 overflow-hidden">
     <div class="text-center mb-8 px-4">
       <!-- Título principal -->
@@ -562,8 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-
-         // Function to close the popup
+            // Function to close the popup
     function closePopup() {
       document.getElementById('popup').style.display = 'none';
     }

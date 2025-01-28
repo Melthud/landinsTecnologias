@@ -10,6 +10,24 @@
 </head>
 <body class="bg-gray-100">
 
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <!-- Popup Content -->
+    <div class="relative bg-white rounded-2xl shadow-lg p-6 w-11/12 max-w-md text-center">
+      <!-- Close Button -->
+      <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <img src="./public/img/beneficios.png" alt="Ad Image" class="rounded-xl mb-4 mx-auto">
+      <h2 class="pb-3 font-bold">
+        NO SOLO TE ACOMPAÑAREMOS EN CADA PASO DE TU PROCESO EDUCATIVO, SINO QUE TAMBIÉN TE PROPORCIONAREMOS LAS<a class="text-[#fb8500]"><strong> HERRAMIENTAS TECNOLÓGICAS NECESARIAS PARA TU ÉXITO</strong></a>
+      </h2>
+      <a href="https://example.com" target="_blank" class="bg-[#fb8500] text-white font-medium py-2 px-4 rounded-xl hover:bg-[#bf7d31] transition">Inscríbete</a>
+    </div>
+  </div>
+
+
   <!-- Barra superior con texto destacado -->
   <div class="bg-black text-white py-1">
     <div class="flex justify-between items-center px-3 flex-wrap">
@@ -91,7 +109,8 @@
                     <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./electromecanica.html">Electromecánica</a></li>
                     <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./automotriz.html">Mecatrónica Automotriz</a></li>
                     <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./emergenciasMedicas.html">Emergencias Médicas</a></li>
-                </ul>
+                    <li class="px-4 py-2 hover:bg-[#bb711d] cursor-pointer text-white"><a href="./seguridad.html">Seguridad y Salud Ocupacional</a></li>
+                  </ul>
             </div>
         </div>
     </div>
@@ -430,6 +449,17 @@
       </a>
     </div>
   </div>
+
+  
+  <div class="bg-white text-center pt-4">
+    <!-- Título -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black pt-4 pb-8 px-4 sm:px-8 md:px-16">
+        AL ESTUDIAR CON NOSOTROS, ACCEDES A GRANDES BENEFICIOS QUE <a class="text-[#fb8500]"><strong>IMPULSAN TU FUTURO</strong></a>
+    </h2>
+    <div class="flex justify-center pb-12 px-[5%] sm:px-[5%] md:px-[5%]">
+        <img src="./public/img/beneficios.png" alt="Graduación" class="w-full sm:w-[75%] md:w-[35%] lg:w-[30%] xl:w-[35%] rounded-lg shadow-2xl object-cover">
+    </div>
+</div>
  
   <div class="bg-[#fb8500] pt-8 overflow-hidden">
     <div class="text-center mb-8 px-4">
@@ -512,6 +542,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 menu.classList.toggle('hidden');
             });
         });
+
+
+            // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
             
       </script>
 </body>
